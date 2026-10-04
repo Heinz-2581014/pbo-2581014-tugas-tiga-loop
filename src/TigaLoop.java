@@ -44,8 +44,21 @@ public class TigaLoop    {
         System.out.println("i <  n berputar : " + kurang + " kali");
         System.out.println("i <= n berputar : " + kurangSama + " kali");
 
-    }
-}
+        int jumlahPrintln = 0;
+        System.out.print("Disaring : ");
+        for (int i = 1; i <= 10; i++) {
+            if (i % 2 == 0) {
+                continue;
+            }
+            if (i > 7) {
+                break;
+            }
+            System.out.print(i + " ");
+            jumlahPrintln++;
+        }
+        System.out.println();
+        System.out.println("Sampai println  : " + jumlahPrintln + " kali");
+
     }
 }
 
